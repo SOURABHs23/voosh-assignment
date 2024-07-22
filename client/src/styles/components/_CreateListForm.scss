@@ -1,0 +1,40 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.create-list {
+    @include flex-column;
+    gap: 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+  // background-color: $dark-blue;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 16px;
+  input {
+    // background-color: $dark-blue;
+    border: 0px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: larger;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+  }
+  button {
+    background-color: $gray;
+    padding: 4px 16px;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button:hover {
+    border: 1px solid $light-blue;
+    // background-color: $green;
+  }
+}
+
+.create-list-buttons {
+    @include flex-row;
+    gap: 24px;
+}

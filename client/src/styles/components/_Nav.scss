@@ -1,0 +1,50 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+header {
+  position: sticky;
+  top: 0px;
+}
+nav {
+  @include flex-row;
+
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background-color: #1a206a;
+  border-bottom: 1px solid $red;
+  color: white;
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 16px 0px;
+    padding: 16px;
+    border-radius: 5px;
+    transition: 0.1s ease-in;
+  }
+  a:hover {
+    // background-color: $light-blue;
+    color: $red;
+    // transform: scale(1.1);
+    transition: 0.1s ease-in;
+  }
+}
+
+#logout-button {
+  cursor: pointer;
+  margin: 16px 0px;
+  padding: 16px;
+  border-radius: 5px;
+  transition: 0.1s ease-in;
+}
+#logout-button:hover {
+  //   background-color: $light-blue;
+  color: $red;
+  //   transform: scale(1.05);
+  transition: 0.1s ease-in;
+}

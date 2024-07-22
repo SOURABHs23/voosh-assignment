@@ -1,0 +1,9 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: $dark-blue;
+}

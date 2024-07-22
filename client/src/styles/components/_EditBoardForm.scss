@@ -1,0 +1,35 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.edit-board {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: 1px solid $blue;
+    background-color: $dark-blue;
+    border-radius: 5px;
+    padding: 16px;
+    aspect-ratio: 1/1;
+    width: 90%;
+    max-width: 500px;
+    input {
+        background-color: $blue-gray;
+        padding: 16px;
+        border-radius: 5px;
+        overflow: hidden;
+        text-wrap: wrap;
+        color: white;
+    }
+    input::placeholder  {
+        color: white;
+        font-size: larger;
+    }
+    select, textarea {
+        color: white;
+    }
+}

@@ -1,0 +1,59 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.create-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    // gap: 4px;
+    cursor: pointer;
+    border: 1px solid $light-blue;
+    // background-color: $dark-blue;
+    border-radius: 5px;
+    padding: 16px;
+
+    width: 250px;
+    height: 250px;
+
+    aspect-ratio: 1 / 1;
+    input {
+        // background-color: $blue-gray;
+        padding: 8px 16px;
+        border: 1px solid $light-blue;
+        border-radius: 5px;
+        overflow: hidden;
+        text-wrap: wrap;
+        color: black;
+    }
+    input::placeholder  {
+        color: black;
+        font-size: larger;
+    }
+    select, textarea {
+        color: white;
+    }
+    button {
+        background-color: $blue;
+        padding: 8px 16px;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        border: 1px solid $light-blue;
+        // background-color: $green;
+    }
+}
+
+.create-board-buttons {
+    @include flex-row;
+    gap: 16px;
+    margin-top: 8px;
+}
+.create-board-button-create:hover {
+    background-color: $light-blue;
+}
+.create-board-button-cancel:hover {
+    background-color: $red;
+}

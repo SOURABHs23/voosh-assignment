@@ -1,0 +1,12 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+#boards-page {
+    margin: 16px;
+}
+
+.board-list {
+    @include flex-row;
+    flex-wrap: wrap;
+    gap: 16px;
+}

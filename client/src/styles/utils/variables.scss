@@ -1,0 +1,55 @@
+$blue: #0079bf;
+$green: #70b500;
+$orange: #ff9f1a;
+$red: #eb5a46;
+$yellow: #f2d600;
+$purple: #c377e0;
+$pink: #ff78cb;
+$light-blue: #00c2e0;
+$light-green: #51e898;
+$gray: #c4c9cc;
+$dark-blue: #1d2125;
+$blue-gray: #333c44;
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

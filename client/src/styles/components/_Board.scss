@@ -1,0 +1,72 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.board-header {
+    position: sticky;
+    top: 56px;
+    @include flex-row;
+    justify-content: start;
+    height: 56px;
+    padding-left: 56px;
+    gap: 56px;
+    width: 100%;
+    // background-color: $blue-gray;
+    box-shadow: 0px 1px 5px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.board-lists {
+    @include flex-row;
+    align-items: start;
+    justify-content: start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    gap: 56px;
+    padding: 56px;
+    width: 100%;
+    height: calc(100svh - 56px * 2 - 0px );
+    // overflow-y: hidden;
+}
+
+.create-list-button {
+  @include flex-column;
+  justify-content: space-between;
+  // background-color: $dark-blue;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 210px;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 16px;
+  svg {
+    margin-top: 56px;
+    width: 40px;
+    height: 40px;
+  }
+}.create-list-button:hover {
+background-color: $red;
+}
+
+
+/* Works on Firefox */
+* {
+    // scrollbar-width: thin;
+    // scrollbar-color: $blue $red;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $dark-blue;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $light-blue;
+    border-radius: 20px;
+    border: 3px solid $dark-blue;
+  }
