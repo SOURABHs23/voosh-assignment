@@ -1,8 +1,8 @@
 FROM node:18-alpine
-WORKDIR /app
+WORKDIR /
 COPY . .
 RUN npm install 
-WORKDIR /app/client
+WORKDIR /client
 RUN npm install && npm run build
 WORKDIR /app
 CMD ["npm", "run", "deploy"]
