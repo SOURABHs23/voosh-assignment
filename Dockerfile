@@ -1,9 +1,9 @@
 FROM node:18-alpine
-WORKDIR /
+WORKDIR /app
 COPY . .
 RUN npm install 
-WORKDIR /client
+WORKDIR /app/client
 RUN npm install && npm run build
-WORKDIR /
+WORKDIR /app
 CMD ["npm", "run", "deploy"]
 EXPOSE 8080
