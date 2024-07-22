@@ -9,7 +9,6 @@
 - **Confetti!🎉**: Special emoji recognition that triggers a celebratory confetti animation. Try to guess a way to trigger it!
 - **Toast Notifications**: Beautiful notifications using [React Hot Toast](https://github.com/timolins/react-hot-toast).
 - **E2E Testing**: Workflow tested using Cypress.
-- **API Documentation**: API endpoints documented using Swagger.
 - **Deployment on Render**: Using a Docker container.
 
 ## Built With
